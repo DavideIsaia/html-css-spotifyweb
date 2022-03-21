@@ -31,6 +31,20 @@ aside {
     left: 0;
 }
 
+.logo {
+    width: 70%;
+    padding: 20px;
+}
+
+.side-icon {
+    width: 10%;
+    margin: 20px;
+}
+
+.side-icon img {
+    margin-bottom: 10px;
+}
+
 /* MAIN */
 .upgrade {
     position: fixed;
@@ -162,12 +176,34 @@ footer {
 }
 
 /* tempo trascorso */
-.progress-bar::after {
-    content: "";
+.elapsed {
     position: absolute;
     left: 0;
     width: 20%;
     height: 100%;
     border-radius: 2px;
     background-color: #c1c1c1;
+}
+
+.elapsed:hover {
+    background-color: rgb(61, 219, 61);
+    cursor: pointer;
+}
+
+/* footer destro */
+.f-right {
+    display: inline-block;
+}
+
+.f-right i {
+    margin-right: 15px;
+    font-size: 0.9em;
+}
+
+/* barra volume */
+.f-right .progress-bar {
+    display: inline-block;
+    width: 150px;
+    vertical-align: middle;
+    margin-right: 20px;
 }
