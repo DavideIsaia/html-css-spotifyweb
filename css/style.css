@@ -45,6 +45,29 @@ aside {
     margin-bottom: 10px;
 }
 
+.playlist {
+    margin: 20px;
+}
+
+.playlist h4 {
+    margin-bottom: 10px;
+}
+
+.playlist .fa-plus-square {
+    font-size: 3em;
+    color: #a3a3a3;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-top: 20px;
+    color: #a3a3a3;
+    font-weight: bold;
+}
+
 /* MAIN */
 .upgrade {
     position: fixed;
@@ -91,9 +114,9 @@ footer {
 /* footer sinistra */
 .f-left {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 12%;
+    margin-left: 15px;
 }
 
 .f-left img {
@@ -106,6 +129,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 30px;
 }
 
 .f-left .far {
