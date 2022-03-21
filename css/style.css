@@ -29,6 +29,7 @@ aside {
     position: relative;
     top: 0;
     left: 0;
+    overflow: hidden;
 }
 
 .logo {
@@ -45,6 +46,7 @@ aside {
     margin-bottom: 10px;
 }
 
+/* sezione playlist */
 .playlist {
     margin: 20px;
 }
@@ -54,8 +56,16 @@ aside {
 }
 
 .playlist .fa-plus-square {
-    font-size: 3em;
+    font-size: 3em;    
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.inline {
+    vertical-align: middle;
+    font-weight: bold;
     color: #a3a3a3;
+    cursor: pointer;
 }
 
 ul {
@@ -66,6 +76,12 @@ li {
     margin-top: 20px;
     color: #a3a3a3;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.inline:hover,
+li:hover {
+    color: white;
 }
 
 /* MAIN */
@@ -103,6 +119,7 @@ footer {
     align-items: center;
     background-color: #282828;
     height: 100px;
+    
 }
 
 .footer-icon {
