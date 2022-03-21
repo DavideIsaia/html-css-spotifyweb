@@ -190,6 +190,21 @@ footer {
     cursor: pointer;
 }
 
+.dot {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: -6px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.elapsed:hover .dot {
+    display: block;
+}
+
 /* footer destro */
 .f-right {
     display: inline-block;
