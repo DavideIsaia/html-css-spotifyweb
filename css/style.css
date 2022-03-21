@@ -17,6 +17,10 @@ a {
     color: inherit;
 }
 
+i {
+    cursor: pointer;
+}
+
 /* MENU LATERALE */
 aside {
     width: 300px;
@@ -31,7 +35,8 @@ aside {
 .upgrade {
     position: fixed;
     top: 0;
-    right: 0;  
+    right: 0; 
+    z-index: 10; 
     width: calc(100% - 300px);
     height: 100px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -49,6 +54,10 @@ aside {
     border: 2px solid white;
 }
 
+.button:hover {
+    transform: scale(1.2);
+}
+
 /* FOOTER */
 footer {
     display: flex;
@@ -62,12 +71,6 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    cursor: pointer;
-}
-
-/* grandezza icone footer */
-footer .fas {
-    font-size: 1.5rem;
 }
 
 /* footer sinistra */
@@ -90,6 +93,11 @@ footer .fas {
     align-items: center;
 }
 
+.f-left .far {
+    margin-right: 1em;
+}
+
+/* effetti all'hover */
 .track a {
     color: #808080;
     font-size: 0.8em;
@@ -108,13 +116,32 @@ footer .fas {
     color: white;
 }
 
-.f-left .far {
-    margin-right: 1em;
-}
-
 /* footer centrale */
 .f-center {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+}
+
+.track-time {
+    margin-top: 20px;
+    height: 4px;
+    width: 500px;
+    border-radius: 2px;
+    background-color: #5a5a5a;
+}
+
+/* icone footer centrale */
+.f-center .fas {
+    margin: auto 15px;
+}
+
+.f-center .fa-play-circle {
+    font-size: 2.4em;
+    margin: auto 20px;
+}
+
+.f-center .fa-play-circle:hover {
+    transform: scale(1.2);
 }
