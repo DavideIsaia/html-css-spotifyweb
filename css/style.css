@@ -37,13 +37,40 @@ aside {
     padding: 20px;
 }
 
-.side-icon {
-    width: 10%;
-    margin: 20px;
+/* menu */
+.menu {
+    margin-bottom: 25px;
 }
 
-.side-icon img {
-    margin-bottom: 10px;
+.menu-icon {
+    padding: 0 20px;
+    margin-bottom: 15px;
+    color: #a3a3a3;
+    cursor: pointer;
+}
+
+.menu-icon:hover {
+    color: white;
+}
+
+.menu-icon span {
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.selected {
+    color: #d2d2d2; 
+    border-left: 3px solid rgb(61, 219, 61);   
+}
+
+.menu img {
+    width: 10%;
+    vertical-align: middle;
+    filter: invert(30%);
+}
+
+.menu-icon:hover img {
+    filter: invert(0);
 }
 
 /* sezione playlist */
