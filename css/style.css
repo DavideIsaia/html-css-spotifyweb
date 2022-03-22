@@ -468,6 +468,7 @@ footer {
 
 /* SCHERMI EXTRA-SMALL */
 @media screen and (max-width: 600px) {
+    /* dimensioni */
     nav {
         width: 80px;
     }
@@ -479,5 +480,14 @@ footer {
 
     .upgrade {
         width: calc(100% - 80px);
-    }    
+    }   
+    
+    /* elementi da nascondere */
+    nav span, .logo, .playlist, .break {
+        display: none;
+    }
+
+    .menu img, .sidebar-bottom img {
+        width: 90%;
+    }
 }
