@@ -43,7 +43,7 @@ main {
 
 nav {
     float: left;
-    width: 300px;
+    width: 250px;
     height: 100%;
     background-color: #000000;
     overflow: hidden;
@@ -51,7 +51,7 @@ nav {
 
 .content {
     float: left;
-    width: calc(100% - 300px);
+    width: calc(100% - 250px);
     height: 100%;
     padding: 120px 20px 20px;
     background-color: #141922;
@@ -182,7 +182,7 @@ li:hover {
     top: 0;
     right: 0; 
     z-index: 1; 
-    width: calc(100% - 300px);
+    width: calc(100% - 250px);
     height: 100px;
     background-color: rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
@@ -230,29 +230,37 @@ li:hover {
 }
 
 /* struttura righe main content */
-.flex {
-    display: flex;
-    justify-content: space-between;
+.row {
     width: calc(100% - 40px);
 }
 
-.flex img {
-    width: 200px;
+.row img {
+    width: 100%;
     object-fit: cover;
 }
 
 /* struttura colonne */
 .col {
+    float: left;
     text-align: center;
-    margin: 5px;   
+    width: calc(94% / 6); 
+    margin-right: 1%;  
 }
 
 .title {
     margin: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .subtitle {
     color: #a3a3a3;
+    margin-left: 5px;
+    margin-bottom: 30px;
+}
+
+.round img {
+    border-radius: 50%;
 }
 
 /* overlay su album */
@@ -286,13 +294,6 @@ li:hover {
 .album:hover .overlay {
     display: block;
 }
-
-
-
-
-
-
-
 
 /* FOOTER */
 footer {
