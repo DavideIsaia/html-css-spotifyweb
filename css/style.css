@@ -16,6 +16,13 @@ html {
     height: 100vh;
     overflow: hidden;
 }
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 h2 {
     margin: 25px 5px;
 }
@@ -27,12 +34,6 @@ a {
 
 i {
     cursor: pointer;
-}
-
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 /* MAIN */
@@ -111,7 +112,7 @@ nav {
     filter: invert(30%);
 }
 
-.menu-icon:hover img, {
+.menu-icon:hover img {
     filter: invert(0);
 }
 
