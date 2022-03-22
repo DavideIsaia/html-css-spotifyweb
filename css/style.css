@@ -16,6 +16,9 @@ html {
     height: 100vh;
     overflow: hidden;
 }
+h2 {
+    margin: 25px 5px;
+}
 
 a {
     text-decoration: none;
@@ -167,7 +170,7 @@ li:hover {
 /* sezione inferiore sidebar */
 .break {
     width: 85%;
-    border: 1px solid gray;
+    height: 2px;
     background-color: gray;
     border-radius: 1px;
     margin: 15px;
@@ -226,6 +229,31 @@ li:hover {
     border-bottom: 3px solid #adff2f;
 }
 
+.flex {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 40px);
+}
+
+.flex img {
+    width: 200px;
+    object-fit: cover;
+    margin: 5px;
+}
+
+.col {
+    /* display: flex;
+    flex-direction: column; */
+    text-align: center;    
+}
+
+.title {
+    margin: 10px;
+}
+
+.subtitle {
+    color: #a3a3a3;
+}
 
 
 
