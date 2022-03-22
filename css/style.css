@@ -77,7 +77,7 @@ nav {
     margin-bottom: 15px;
 }
 
-.menu-icon, .user {
+.menu-icon {
     padding: 0 20px;
     margin-bottom: 15px;
     color: #a3a3a3;
@@ -88,7 +88,7 @@ nav {
     color: white;
 }
 
-.menu-icon span, .user span {
+.menu-icon span {
     vertical-align: middle;
     font-weight: bold;
 }
@@ -98,18 +98,28 @@ nav {
     border-left: 3px solid rgb(61, 219, 61);   
 }
 
-.menu img, .user img {
+.menu img, .sidebar-bottom img {
     width: 10%;
     vertical-align: middle;
     filter: invert(30%);
 }
 
-.menu-icon:hover img, .user:hover img {
+.menu-icon:hover img, {
     filter: invert(0);
 }
 
-.user {
-    justify-self: flex-end;
+.profile {
+    padding: 0 20px;
+}
+
+.profile img {
+    background-color: gray;
+    border-radius: 100%;
+}
+
+.profile span {
+    font-weight: bold;
+    margin-left: 10px;
 }
 
 /* sezione playlist */
@@ -137,6 +147,8 @@ nav {
 
 ul {
     list-style: none;
+    height: 80%;
+    overflow-y: auto;
 }
 
 li {
@@ -153,11 +165,11 @@ li:hover {
 
 /* sezione inferiore sidebar */
 .break {
-    width: 90%;
+    width: 85%;
     border: 1px solid gray;
     background-color: gray;
     border-radius: 1px;
-    margin: 15px 0;
+    margin: 15px;
 }
 
 /* BARRA SUPERIORE UPGRADE */
