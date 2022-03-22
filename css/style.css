@@ -95,7 +95,7 @@ nav {
 
 .selected {
     color: #d2d2d2; 
-    border-left: 3px solid rgb(61, 219, 61);   
+    border-left: 3px solid #adff2f;   
 }
 
 .menu img, .sidebar-bottom img {
@@ -146,13 +146,13 @@ nav {
     cursor: pointer;
 }
 
-ul {
+.playlist ul {
     list-style: none;
     height: 80%;
     overflow-y: auto;
 }
 
-li {
+.playlist li {
     margin-top: 20px;
     color: #a3a3a3;
     font-weight: bold;
@@ -200,6 +200,45 @@ li:hover {
 .upgrade > a.button:hover {
     transform: scale(1.1);
 }
+
+/* LISTA MENU ORIZZONTALE */
+.row-list {
+    text-align: center;
+}
+
+.row-list li {
+    display: inline-block;
+    margin: 0 20px 30px;
+}
+
+.row-list a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #a3a3a3;
+}
+
+.row-list a:hover {
+    color: white;
+}
+
+.select {
+    padding-bottom: 3px;
+    border-bottom: 3px solid #adff2f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* FOOTER */
 footer {
