@@ -75,6 +75,10 @@ nav {
     padding: 20px;
 }
 
+.hide {
+    display: none;
+}
+
 /* menu */
 .menu {
     margin-bottom: 15px;
@@ -489,5 +493,12 @@ footer {
 
     .menu img, .sidebar-bottom img {
         width: 90%;
+    }
+
+    /* icona spotify da visualizzare */
+    .hide {
+        display: block;
+        width: 55%;
+        margin: 20px auto;
     }
 }
