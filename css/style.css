@@ -153,10 +153,17 @@ nav {
     margin-bottom: 10px;
 }
 
-.playlist .fa-plus-square {
-    font-size: 3em;    
-    vertical-align: middle;
+.add-playlist {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
+    font-size: 2em;
+    text-align: center;
+    line-height: 40px;
+    color: #000000;
+    background-color: #a3a3a3;
+    vertical-align: middle;
 }
 
 .inline {
@@ -182,6 +189,10 @@ nav {
 .inline:hover,
 li:hover {
     color: white;
+}
+
+.inline:hover .add-playlist {
+    background-color: white;
 }
 
 /* sezione inferiore sidebar */
