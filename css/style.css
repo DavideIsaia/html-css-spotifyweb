@@ -271,7 +271,8 @@ li:hover {
     float: left;
     text-align: center;
     width: calc(94% / 6); 
-    margin-right: 1%;  
+    margin-right: 1%; 
+    cursor: pointer; 
 }
 
 .title {
@@ -291,7 +292,6 @@ li:hover {
 /* overlay su album */
 .album {
     position: relative;
-    cursor: pointer;
 }
 
 .overlay::before {
@@ -316,7 +316,7 @@ li:hover {
     transform: translate(-50% -50%);
 }
 
-.album:hover .overlay {
+.col:hover .overlay {
     display: block;
 }
 
@@ -326,6 +326,7 @@ li:hover {
 
 /* FOOTER */
 footer {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
