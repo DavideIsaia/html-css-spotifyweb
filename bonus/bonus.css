@@ -1,0 +1,630 @@
+:root {
+    --footer-height: 100px;
+    --nav-width: 250px;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* REGOLE COMUNI */
+html {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h2 {
+    margin: 25px 5px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+i {
+    cursor: pointer;
+}
+
+/* MAIN */
+main {
+    height: calc(100% - var(--footer-height));
+    background-color: #141922;
+}
+
+nav {
+    float: left;
+    width: var(--nav-width);
+    height: 100%;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.content {
+    width: calc(100% - var(--nav-width));
+    height: 100%;
+    padding: 120px 20px 20px;
+    background-color: #141922;
+    overflow-y: auto;
+}
+
+/* MENU LATERALE */
+.sidebar-top {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - var(--footer-height));
+    min-height: 350px;
+}
+
+.sidebar-bottom {
+    height: 100px;
+}
+
+.logo {
+    width: 70%;
+    padding: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+/* menu */
+.menu {
+    margin-bottom: 15px;
+}
+
+.menu-icon {
+    padding: 10px 0 10px 20px;
+    color: #a3a3a3;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+}
+
+.menu-icon img {
+    width: 14%;
+    vertical-align: middle;
+    filter: invert(30%);
+}
+
+.menu-icon:hover, .download-icon:hover  {
+    color: white;
+}
+
+.menu-icon span, .download-icon span {
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.selected {
+    color: #d2d2d2; 
+    border-left: 3px solid #adff2f;   
+}
+
+.sidebar-bottom img {
+    width: 10%;
+    vertical-align: middle;
+    filter: invert(30%);
+}
+
+.download-icon {
+    padding: 0 20px;
+    color: #a3a3a3;
+    cursor: pointer;
+}
+
+.menu-icon:hover img, .download-icon img {
+    filter: invert(0);
+}
+
+.profile {
+    padding: 0 20px;
+}
+
+.profile img {
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.profile span {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* sezione playlist */
+.playlist {
+    margin: 20px;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.playlist h4 {
+    margin-bottom: 10px;
+}
+
+.add-playlist {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    font-size: 2em;
+    text-align: center;
+    line-height: 40px;
+    color: #000000;
+    background-color: #a3a3a3;
+    vertical-align: middle;
+}
+
+.inline {
+    vertical-align: middle;
+    font-weight: bold;
+    color: #a3a3a3;
+    cursor: pointer;
+}
+
+.playlist ul {
+    list-style: none;
+    height: 80%;
+    overflow-y: auto;
+}
+
+.playlist li {
+    margin-top: 20px;
+    color: #a3a3a3;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.inline:hover,
+li:hover {
+    color: white;
+}
+
+.inline:hover .add-playlist {
+    background-color: white;
+}
+
+/* sezione inferiore sidebar */
+.break {
+    width: 85%;
+    height: 2px;
+    background-color: gray;
+    border-radius: 1px;
+    margin: 15px;
+}
+
+/* BARRA SUPERIORE UPGRADE */
+.upgrade {
+    position: fixed;
+    top: 0;
+    right: 0; 
+    z-index: 1; 
+    width: calc(100% - var(--nav-width));
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: right;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 35px;
+    border-radius: 50px;
+    text-align: center;
+    padding: 1em 3em;
+    border: 2px solid white;
+}
+
+.upgrade > a.button:hover {
+    transform: scale(1.1);
+}
+
+/* LISTA MENU ORIZZONTALE */
+.row-list {
+    text-align: center;
+}
+
+.row-list li {
+    display: inline-block;
+    margin: 0 20px 30px;
+}
+
+.row-list a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #a3a3a3;
+}
+
+.row-list a:hover {
+    color: white;
+}
+
+.select {
+    padding-bottom: 3px;
+    border-bottom: 3px solid #adff2f;
+}
+
+/* struttura righe main content */
+.row {
+    width: calc(100% - 40px);
+}
+
+.row img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* struttura colonne */
+.col {
+    float: left;
+    text-align: center;
+    width: calc(94% / 6); 
+    margin-right: 1%; 
+    cursor: pointer; 
+}
+
+.title {
+    margin: 10px;
+}
+
+.subtitle {
+    color: #a3a3a3;
+    margin-left: 5px;
+    margin-bottom: 30px;
+}
+
+.round img {
+    border-radius: 50%;
+}
+
+/* overlay su album */
+.album {
+    position: relative;
+}
+
+.overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.overlay {
+    display: none;
+}
+
+.overlay .fa-play-circle {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-size: 3em;
+    transform: translate(-50% -50%);
+}
+
+.col:hover .overlay {
+    display: block;
+}
+
+.round:hover .overlay::before {
+    border-radius: 50%;
+}
+
+/* FOOTER */
+footer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #282828;
+    height: var(--footer-height);    
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* footer sinistra */
+.f-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.f-left img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.track {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.f-left .far {
+    margin-right: 1em;
+}
+
+/* effetti all'hover */
+.track a {
+    color: #808080;
+    font-size: 0.8em;
+}
+
+.track a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.f-left .footer-icon {
+    color: #808080;
+}
+
+.f-left .footer-icon i:hover {
+    color: white;
+}
+
+/* footer centrale */
+.f-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* icone footer centrale */
+.f-center .fas {
+    margin: auto 15px;
+}
+
+.f-center .fa-play-circle {
+    font-size: 2.4em;
+    margin: auto 20px;
+}
+
+.f-center .fa-play-circle:hover {
+    transform: scale(1.1);
+}
+
+.track-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.track-time span {
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 0 2em;
+}
+
+/* barra di progressione traccia */
+.progress-bar {
+    position: relative;
+    height: 4px;
+    width: 30vw;
+    border-radius: 2px;
+    background-color: #5a5a5a;
+}
+
+/* tempo trascorso */
+.elapsed {
+    position: absolute;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    border-radius: 2px;
+    background-color: #c1c1c1;
+}
+
+.elapsed:hover {
+    background-color: rgb(61, 219, 61);
+    cursor: pointer;
+}
+
+.dot {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: -6px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.elapsed:hover .dot {
+    display: block;
+}
+
+/* footer destro */
+.f-right {
+    display: inline-block;
+}
+
+.f-right i {
+    margin-right: 15px;
+    font-size: 0.9em;
+}
+
+/* barra volume */
+.f-right .progress-bar {
+    display: inline-block;
+    width: 15vw;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+/* SCHERMI MEDIUM */
+@media screen and (max-width: 1100px) {
+
+    /* visualizzazione album */
+    .col {
+        width: calc(94% / 4);  
+    }
+
+    .title, .subtitle {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* footer */
+    .f-left .footer-icon {
+        flex-direction: column;
+    }
+
+    /* margini tra icone laterali del footer */
+    .f-left {
+        margin-left: 2vw;
+    }
+    
+    .f-left img {
+        margin-right: 2vw;
+    }
+
+    .f-right .progress-bar {
+        width: 15vw;
+        margin-right: 1vw;
+    }
+
+    .f-right i {
+        margin-right: 1vw;
+    }
+    
+    /* margini tra icone del footer centrale */
+    .track {
+        margin-right: 2vw;
+    }
+
+    .track-time span {
+        margin: 0 2vw;
+    }
+
+    .f-center .fas {
+        margin: auto 1vw;
+    }
+
+    .f-center .fa-play-circle {
+        margin: auto 1vw;
+    }
+}
+
+/* SCHERMI SMALL */
+@media screen and (max-width: 700px) {
+
+    /* visualizzazione album */
+    .col {
+        width: calc(94% / 2); 
+    }
+
+    /* bonus bottone call to action */
+    .upgrade {
+        height: 50px;
+    }
+    
+    .button {
+        margin-top: 10px;
+        font-size: 0.7em;
+        padding: 0.5em 2em;
+    }
+
+    /* bonus cambio margini e padding contenuto centrale */
+    .content {
+        padding-top: 70px;
+    }
+    
+    .row-list li {
+        margin: 0 10px 15px;
+        font-size: 0.7em;
+    }
+    
+    /* bonus footer responsive */
+    .track-time span,
+    .f-center .fa-random,
+    .f-center .fa-redo-alt,
+    .f-right .fa-list,
+    .f-right .fa-desktop {
+        display: none;
+    }
+}
+
+/* SCHERMI EXTRA-SMALL */
+@media screen and (max-width: 600px) {
+
+    /* dimensioni */
+    nav {
+        width: 80px;
+    }
+
+    .content {
+        width: calc(100% - 80px);
+    }
+
+    .upgrade {
+        width: calc(100% - 80px);
+    }   
+    
+    /* elementi da nascondere */
+    nav span, 
+    .logo, 
+    .playlist, 
+    .break {
+        display: none;
+    }
+
+    /* barra laterale */
+    .menu-icon img {
+        width: 60%;
+    }
+
+    .download-icon img {
+        width: 70%;
+    }
+
+    .download-icon {
+        padding-left: 28px;
+    }
+
+    .profile img {
+        width: 95%;
+    }
+
+    .profile {
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    /* icona spotify da visualizzare */
+    .hide {
+        display: block;
+        width: 55%;
+        margin: 20px auto;
+    }
+}
