@@ -51,7 +51,6 @@ nav {
 }
 
 .content {
-    float: left;
     width: calc(100% - 250px);
     height: 100%;
     padding: 120px 20px 20px;
@@ -321,6 +320,10 @@ li:hover {
     display: block;
 }
 
+.round:hover .overlay::before {
+    border-radius: 50%;
+}
+
 /* FOOTER */
 footer {
     display: flex;
@@ -545,7 +548,6 @@ footer {
     }
 
     .content {
-        float: left;
         width: calc(100% - 80px);
     }
 
@@ -586,5 +588,4 @@ footer {
         width: 55%;
         margin: 20px auto;
     }
-
 }
