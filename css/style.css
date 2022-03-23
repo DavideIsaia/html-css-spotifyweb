@@ -86,10 +86,16 @@ nav {
 }
 
 .menu-icon {
-    padding: 0 20px;
-    margin-bottom: 15px;
+    padding: 10px 0 10px 20px;
     color: #a3a3a3;
     cursor: pointer;
+    border-left: 3px solid transparent;
+}
+
+.menu-icon img {
+    width: 14%;
+    vertical-align: middle;
+    filter: invert(30%);
 }
 
 .menu-icon:hover {
@@ -106,7 +112,7 @@ nav {
     border-left: 3px solid #adff2f;   
 }
 
-.menu img, .sidebar-bottom img {
+.sidebar-bottom img {
     width: 10%;
     vertical-align: middle;
     filter: invert(30%);
