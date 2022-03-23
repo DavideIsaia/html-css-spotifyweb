@@ -467,7 +467,7 @@ footer {
 /* barra volume */
 .f-right .progress-bar {
     display: inline-block;
-    width: 150px;
+    width: 15vw;
     vertical-align: middle;
     margin-right: 20px;
 }
@@ -486,9 +486,44 @@ footer {
         text-overflow: ellipsis;
     }
 
-    /* icone footer */
+    /* footer */
     .f-left .footer-icon {
         flex-direction: column;
+    }
+
+    /* margini tra icone laterali del footer */
+    .f-left {
+        margin-left: 2vw;
+    }
+    
+    .f-left img {
+        margin-right: 2vw;
+    }
+
+    .f-right .progress-bar {
+        width: 15vw;
+        margin-right: 1vw;
+    }
+
+    .f-right i {
+        margin-right: 1vw;
+    }
+    
+    /* margini tra icone del footer centrale */
+    .track {
+        margin-right: 2vw;
+    }
+
+    .track-time span {
+        margin: 0 2vw;
+    }
+
+    .f-center .fas {
+        margin: auto 1vw;
+    }
+
+    .f-center .fa-play-circle {
+        margin: auto 1vw;
     }
 }
 
