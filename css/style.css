@@ -98,11 +98,11 @@ nav {
     filter: invert(30%);
 }
 
-.menu-icon:hover {
+.menu-icon:hover, .download-icon:hover  {
     color: white;
 }
 
-.menu-icon span {
+.menu-icon span, .download-icon span {
     vertical-align: middle;
     font-weight: bold;
 }
@@ -118,7 +118,13 @@ nav {
     filter: invert(30%);
 }
 
-.menu-icon:hover img {
+.download-icon {
+    padding: 0 20px;
+    color: #a3a3a3;
+    cursor: pointer;
+}
+
+.menu-icon:hover img, .download-icon img {
     filter: invert(0);
 }
 
@@ -128,7 +134,7 @@ nav {
 
 .profile img {
     background-color: gray;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
 .profile span {
@@ -458,6 +464,7 @@ footer {
 /* SCHERMI MEDIUM */
 @media screen and (max-width: 1100px) {
 
+    /* visualizzazione album */
     .col {
         width: calc(94% / 4);  
     }
@@ -467,18 +474,25 @@ footer {
         overflow: hidden;
         text-overflow: ellipsis;
     }
+
+    /* icone footer */
+    .f-left .footer-icon {
+        flex-direction: column;
+    }
 }
 
 /* SCHERMI SMALL */
 @media screen and (max-width: 700px) {
 
+    /* visualizzazione album */
     .col {
         width: calc(94% / 2); 
-    }    
+    }
 }
 
 /* SCHERMI EXTRA-SMALL */
 @media screen and (max-width: 600px) {
+
     /* dimensioni */
     nav {
         width: 80px;
@@ -498,8 +512,26 @@ footer {
         display: none;
     }
 
-    .menu img, .sidebar-bottom img {
-        width: 90%;
+    /* barra laterale */
+    .menu-icon img {
+        width: 60%;
+    }
+
+    .download-icon img {
+        width: 70%;
+    }
+
+    .download-icon {
+        padding-left: 28px;
+    }
+
+    .profile img {
+        width: 95%;
+    }
+
+    .profile {
+        padding-top: 20px;
+        padding-left: 20px;
     }
 
     /* icona spotify da visualizzare */
@@ -508,4 +540,5 @@ footer {
         width: 55%;
         margin: 20px auto;
     }
+
 }
